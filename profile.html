@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="card">
+  <h2>Profile</h2>
+  <p><b>User ID:</b> {{ user }}</p>
+  <p><b>Role:</b> {% if user == 'admin' %}Admin{% else %}User{% endif %}</p>
+</div>
+{% endblock %}

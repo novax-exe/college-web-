@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="grid">
+  <div class="card">
+    <h2>Welcome, {{ user }}</h2>
+    <p>This is the main dashboard of <b>{{ college_name }}</b>.</p>
+  </div>
+
+  <div class="card">
+    <h3>Quick Links</h3>
+    <ul class="list">
+      <li>✅ Attendance</li>
+      <li>✅ Results</li>
+      <li>✅ Department Info</li>
+      <li>✅ Student Portal</li>
+    </ul>
+    <p class="muted">You can add more modules later.</p>
+  </div>
+
+  <div class="card">
+    <h3>Announcements</h3>
+    <p class="muted">No announcements yet.</p>
+  </div>
+</div>
+{% endblock %}

@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="card login-card">
+  <h2>Create New User (Admin)</h2>
+  <form method="POST" class="form">
+    <label>New User ID</label>
+    <input type="text" name="new_user" placeholder="Enter new user id" required>
+
+    <label>Password</label>
+    <input type="password" name="new_pass" placeholder="Enter password" required>
+
+    <label>Confirm Password</label>
+    <input type="password" name="new_pass_confirm" placeholder="Re-enter password" required>
+
+    <button type="submit" class="btn">Create User</button>
+  </form>
+</div>
+{% endblock %}
