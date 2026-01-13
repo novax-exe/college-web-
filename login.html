@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="card login-card">
+  <h2>Login</h2>
+  <p class="muted">User ID + Password + Confirm Password is mandatory</p>
+
+  <form method="POST" class="form">
+    <label>User ID</label>
+    <input type="text" name="username" placeholder="Enter User ID" required>
+
+    <label>Password</label>
+    <input type="password" name="password" placeholder="Enter Password" required>
+
+    <label>Confirm Password</label>
+    <input type="password" name="confirm_password" placeholder="Re-enter Password" required>
+
+    <button type="submit" class="btn">Login</button>
+
+    <div class="hint">
+      <p><b>Demo Credentials:</b></p>
+      <p>Admin → <code>admin</code> / <code>admin@123</code></p>
+      <p>Student → <code>student</code> / <code>student@123</code></p>
+    </div>
+  </form>
+</div>
+{% endblock %}
